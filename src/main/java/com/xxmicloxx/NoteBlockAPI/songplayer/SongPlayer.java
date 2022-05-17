@@ -314,7 +314,7 @@ public abstract class SongPlayer {
 				long startTime = System.currentTimeMillis();
 				lock.lock();
 				try {
-					if (destroyed || NoteBlockAPI.getAPI().isDisabling()){
+					if (destroyed){
 						break;
 					}
 
